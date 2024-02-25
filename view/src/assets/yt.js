@@ -346,7 +346,7 @@ var signinCallback = function (result){
    *
    * @constructor
    */
-  var UploadVideo = function() {
+var UploadVideo = function() {
     /**
      * The array of tags for the new YouTube video.
      *
@@ -510,3 +510,5 @@ var signinCallback = function (result){
       }.bind(this)
     });
   };
+
+  export default UploadVideo

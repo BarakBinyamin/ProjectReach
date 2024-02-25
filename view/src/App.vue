@@ -41,7 +41,7 @@
        >
        </textarea>
       </div>
-      <div id="button" class="button">
+      <div id="button" class="button" @click="UploadVideo">
         Post
       </div>
       <div class="stats">
@@ -63,7 +63,7 @@
 
 
 <script>
-import "./assets/yt.js"
+import UploadVideo from "./assets/yt.js"
 
 export default{
   data(){
