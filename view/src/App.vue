@@ -42,7 +42,7 @@
        </textarea>
       </div>
       <div class="button" @click="upload()">
-        Posti
+        Post
       </div>
       <!-- <div id="progress" class="progress">
         Progress
