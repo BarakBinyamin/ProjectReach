@@ -7,16 +7,17 @@ const app     = express()
 var options = {
   cert: fs.readFileSync('/home/dev/fullchain.pem'),
   key: fs.readFileSync('/home/dev/privkey.pem'),
-}
+}   
 
 app.use(express.static('../view/dist'))
 app.get("/example",(req,res)=>{
     res.send("This is a godd test!")
 })
-app.get("/*",(req,res)=>{
-    console.log(req)
-    console.log(req.body)
-    res.send("This is a godd test!")
+app.get("/post",(req,res)=>{
+    res.sendFile("../view/dist/index.html")
+})
+app.get("/*", (res,req)=>{
+    res.send("this is a good test")
 })
 
 http.createServer(app).listen(80, ()=>{
