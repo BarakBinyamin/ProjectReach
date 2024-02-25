@@ -34,7 +34,7 @@ https://projectreach.biz/termsofservice
 
 # Youtube
 Gog this this stupid page, find youtube, eneble the api, add the app,https://console.cloud.google.com/apis/library?project=project-reach-415400
-
+# https://github.com/tokland/youtube-upload/issues/306
 
 ## Edit the allowed users - Oauth consent screen
 https://console.cloud.google.com/apis/credentials/consent?project=project-reach-415400

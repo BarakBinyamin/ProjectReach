@@ -150,10 +150,10 @@ http.createServer(app).listen(80, ()=>{
     console.log("listening on port 80")
 })
 
-// var options = {
-//   cert: fs.readFileSync('/home/dev/fullchain.pem'),
-//   key: fs.readFileSync('/home/dev/privkey.pem'),
-// }   
-// https.createServer(options, app).listen(443,()=>{
-//     console.log("listening on port 443")
-// })
+var options = {
+  cert: fs.readFileSync('/home/dev/fullchain.pem'),
+  key: fs.readFileSync('/home/dev/privkey.pem'),
+}   
+https.createServer(options, app).listen(443,()=>{
+    console.log("listening on port 443")
+})
