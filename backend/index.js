@@ -13,6 +13,11 @@ app.use(express.static('../view/dist'))
 app.get("/example",(req,res)=>{
     res.send("This is a godd test!")
 })
+app.get("/*",(req,res)=>{
+    console.log(req)
+    console.log(req.body)
+    res.send("This is a godd test!")
+})
 
 http.createServer(app).listen(80, ()=>{
     console.log("listening on port 80")

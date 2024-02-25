@@ -65,8 +65,14 @@ export default{
     }
   },
   methods : {
-    login(vari){
-      console.log('hi')
+    login(social){
+      switch (social){
+        case "youtube":
+          this.requestGoogleAuth()
+          break;
+        default:
+          console.log(social)
+      }
     },
     dropHandler(ev){
       ev.preventDefault()
@@ -100,7 +106,6 @@ export default{
       input.click()
     },
     async requestGoogleAuth(){
-
       var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth'
       var form = document.createElement('form')
       form.setAttribute('method', 'GET')
