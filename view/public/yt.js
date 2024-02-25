@@ -1,6 +1,3 @@
-import "./gapi.js"
-
-
 console.log('did this')
 
 
@@ -348,7 +345,7 @@ var signinCallback = function (result){
    *
    * @constructor
    */
-var UploadVideo = function() {
+    var UploadVideo = function() {
     /**
      * The array of tags for the new YouTube video.
      *
@@ -513,4 +510,4 @@ var UploadVideo = function() {
     });
   };
 
-export default UploadVideo
+  console.log('got here too')

@@ -41,7 +41,7 @@
        >
        </textarea>
       </div>
-      <div id="button" class="button" @click="uploadVideo">
+      <div id="button" class="button" onclick="UploadVideo">
         Post
       </div>
       <div class="stats">
@@ -63,7 +63,6 @@
 
 
 <script>
-import upload from "./assets/yt.js"
 
 export default{
   data(){
@@ -85,10 +84,6 @@ export default{
     }
   },
   methods : {
-    uploadVideo(){
-      console.log('here')
-      upload()
-    },
     login(social){
       switch (social){
         case "youtube":
