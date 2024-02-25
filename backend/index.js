@@ -9,7 +9,7 @@ const cors           = require('cors')
 const fs             = require('fs')
 const upload         = multer({ dest: 'uploads/' })
 const app            = express()
-
+const redirect       = express()
 
 // Youttube stuff
 const {google}      = require('googleapis')
@@ -141,12 +141,15 @@ app.get("/run", (req, res)=>{
 })
 
 
-
 app.get("/*", (req, res)=>{
     res.send("this is a good test")
 })
 
-http.createServer(app).listen(80, ()=>{
+app.get("/*", (req,res)=>{
+    res.redirect("https://projectreach.biz")
+})
+
+http.createServer(redirect).listen(80, ()=>{
     console.log("listening on port 80")
 })
 
