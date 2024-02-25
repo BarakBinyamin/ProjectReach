@@ -41,7 +41,7 @@
        >
        </textarea>
       </div>
-      <div id="button" class="button" @click="UploadVideo">
+      <div id="button" class="button" @click="uploadVideo">
         Post
       </div>
       <div class="stats">
