@@ -6,7 +6,6 @@
 
 Check out the website @ [https://ProjectReach.biz](https://ProjectReach.biz)
 
-
 ## Inspiration
 Making and distributing educational videos can be made simpler with the the right tools!
 
