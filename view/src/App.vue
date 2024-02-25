@@ -41,17 +41,11 @@
        >
        </textarea>
       </div>
-      <button disbaled="true" id="button" class="button" onclick="UploadVideo">
+      <div id="button" class="button" onclick="UploadVideo">
         Post
-      </button>
-      <div class="stats">
-        <div id="post-upload-status"></div>
-        <div id="upload-progress"></div>
-        <div id="percent-transferred"></div>
-        <div id="bytes-transferred"></div>
-        <div id="total-bytes"></div>
-        <div id="complete"></div>
-        <div></div>
+      </div>
+      <div id="progress" class="progress">
+        Progress
       </div>
     </div>
     <div class="notes" >
@@ -63,6 +57,7 @@
 
 
 <script>
+import API from "./assets/api.js"
 
 export default{
   data(){
@@ -75,13 +70,8 @@ export default{
       insta    : false
     }
   },
-  mounted(){
-    if (window.location.hash){
-      const hash = window.location.hash
-      if (hash.includes('youtube')){
-        this.youtube = true
-      }
-    }
+  async mounted(){
+    console.log(await API.checkForLogins())
   },
   methods : {
     login(social){
@@ -125,33 +115,6 @@ export default{
       }
       input.click()
     },
-    async requestGoogleAuth(){
-      var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth'
-      var form = document.createElement('form')
-      form.setAttribute('method', 'GET')
-      form.setAttribute('action', oauth2Endpoint)
-
-      // Parameters to pass to OAuth 2.0 endpoint.
-      var params = {
-                    'client_id'             : '838318889372-1b6vmd1pgjr0qp9bupithl172hv4cl4v.apps.googleusercontent.com',
-                    'redirect_uri'          : 'https://projectreach.biz/post',
-                    'response_type'         : 'token',
-                    'scope'                 : 'https://www.googleapis.com/auth/youtube.upload',
-                    'include_granted_scopes': 'true',
-                    'state'                 : 'pass-through value'
-                  }
-      for (var p in params) {
-        var input = document.createElement('input')
-        input.setAttribute('type', 'hidden')
-        input.setAttribute('name', p)
-        input.setAttribute('value', params[p])
-        form.appendChild(input)
-      }
-        document.body.appendChild(form)
-        form.submit()
-    }
-
-
   }
 }
 </script>
