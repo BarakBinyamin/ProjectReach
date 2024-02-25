@@ -63,7 +63,7 @@
 
 
 <script>
-import UploadVideo from "./assets/yt.js"
+import upload from "./assets/yt.js"
 
 export default{
   data(){
@@ -85,6 +85,10 @@ export default{
     }
   },
   methods : {
+    uploadVideo(){
+      console.log('here')
+      upload()
+    }
     login(social){
       switch (social){
         case "youtube":

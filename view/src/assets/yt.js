@@ -1,6 +1,8 @@
 import "./gapi.js"
 
 
+console.log('did this')
+
 
 /*  COPY PASTE FROM GITHUB */
 // The client ID is obtained from the {{ Google Cloud Console }}
