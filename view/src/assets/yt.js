@@ -511,4 +511,4 @@ var UploadVideo = function() {
     });
   };
 
-  export default UploadVideo
+export default UploadVideo
