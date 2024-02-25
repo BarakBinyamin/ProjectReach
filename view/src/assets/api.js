@@ -1,6 +1,6 @@
 class API {
-    async checkForLogins(){
-        const  URLS_TO_CLICK = await fetch("/auth")
+    static async checkForLogins(){
+        const  URLS_TO_CLICK = await (await fetch("/auth", {credentials: "same-origin"})).json()
         return URLS_TO_CLICK
     }
 }

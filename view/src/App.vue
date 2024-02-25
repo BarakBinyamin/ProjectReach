@@ -67,17 +67,33 @@ export default{
       width    : window.innerWidth,
       youtube  : false,
       tiktok   : false,
-      insta    : false
+      insta    : false,
+      auth     : {
+        youtube: false,
+        tiktok : false,
+        insta  : false
+      }
     }
   },
   async mounted(){
-    console.log(await API.checkForLogins())
+    const links = await API.checkForLogins()
+    console.log(links)
+    // Get youtube auth link
+    if(links.youtube){
+      this.auth.youtube = links.youtube
+    }else{
+      this.youtube      = true
+    }
+
+    // Get other auth links
+
+
   },
   methods : {
     login(social){
       switch (social){
         case "youtube":
-          if (!this.youtube){this.requestGoogleAuth()}
+          if (!this.youtube && this.auth.youtube){window.location=this.auth.youtube}
           break
         default:
           console.log(social)
