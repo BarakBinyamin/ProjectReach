@@ -14,7 +14,7 @@ app.get("/example",(req,res)=>{
     res.send("This is a godd test!")
 })
 app.get("/post",(req,res)=>{
-    res.sendFile("../view/dist/index.html")
+    res.sendFile("../view/dist/index.html", {root: '.'})
 })
 app.get("/*", (res,req)=>{
     res.send("this is a good test")
