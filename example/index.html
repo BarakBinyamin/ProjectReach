@@ -11,7 +11,15 @@
     padding:5px 0px 5px 0px;
 }
 </style>
+<button onclick="test()">press here!!!</button>
 <script>
+async function test(){
+    console.log('here')
+    const  URLS_TO_CLICK = await (await fetch("/foo", 
+            {credentials : "include"})).text()
+    console.log(URLS_TO_CLICK)
+}
+
 function postFile() {
     var formdata = new FormData();
 

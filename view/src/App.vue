@@ -35,18 +35,18 @@
         <input id="title" class="classy" type="text" placeholder="A Title"  spellcheck="false"/>
       </div>
       <div>
-       <textarea id="description"
+       <textarea id="comments"
        class="classy" rows="5" cols="25" placeholder="Some comments"
         spellcheck="false"
        >
        </textarea>
       </div>
-      <div id="button" class="button" onclick="UploadVideo">
-        Post
+      <div class="button" @click="upload()">
+        Posti
       </div>
-      <div id="progress" class="progress">
+      <!-- <div id="progress" class="progress">
         Progress
-      </div>
+      </div> -->
     </div>
     <div class="notes" >
       <a href="https://github.com/BarakBinyamin/ProjectReach">Made</a> with ❤️ by 
@@ -131,6 +131,45 @@ export default{
       }
       input.click()
     },
+     async upload(e) {
+      console.log('here')
+      const title    = document.getElementById('title').value
+      const comments = document.getElementById('comments').value
+      if (this.file && title && comments){
+        var formdata = new FormData();
+
+        formdata.append('video', this.file)
+        formdata.append('title', title)
+        formdata.append('comments', comments)
+
+        var request = new XMLHttpRequest();
+
+        // request.upload.addEventListener('progress', function (e) {
+        //     var file1Size = document.getElementById('file1').files[0].size;
+        //     console.log(file1Size);
+
+        //     if (e.loaded <= file1Size) {
+        //         var percent = Math.round(e.loaded / file1Size * 100);
+        //         document.getElementById('progress-bar-file1').style.width = percent + '%';
+        //         document.getElementById('progress-bar-file1').innerHTML = percent + '%';
+        //     } 
+
+        //     if(e.loaded == e.total){
+        //         document.getElementById('progress-bar-file1').style.width = '100%';
+        //         document.getElementById('progress-bar-file1').innerHTML = '100%';
+        //     }
+        // });   
+
+        request.open('post', '/upload');
+        request.timeout = 45000;
+        request.send(formdata);
+        await new Promise(res=>setTimeout(res,5000))
+        const result = await API.uploadLastPush()
+        alert("Post submitted, check your platforms for content")
+      }else{
+        alert("Missin' a some detials there bud thre bud...")
+      }
+    }
   }
 }
 </script>
