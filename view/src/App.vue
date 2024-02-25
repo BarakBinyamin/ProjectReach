@@ -41,7 +41,7 @@
        >
        </textarea>
       </div>
-      <button id="button" class="button" onclick="UploadVideo">
+      <button disbaled="true" id="button" class="button" onclick="UploadVideo">
         Post
       </button>
       <div class="stats">
