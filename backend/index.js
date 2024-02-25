@@ -9,8 +9,14 @@ var options = {
   key: fs.readFileSync('/home/dev/privkey.pem'),
 }
 
+app.use(express.static('../view/dist'))
 app.get("/example",(req,res)=>{
     res.send("This is a godd test!")
 })
-http.createServer(app).listen(80)
-https.createServer(options, app).listen(443)
+
+http.createServer(app).listen(80, ()=>{
+    console.log("listening on port 80")
+})
+https.createServer(options, app).listen(443,()=>{
+    console.log("listening on port 443")
+})
