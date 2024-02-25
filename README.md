@@ -24,3 +24,21 @@ APIS: TikTok, Youtube, Facebook/Instagram
 
 - [install node on linux the right way](https://stackoverflow.com/questions/39981828/installing-nodejs-and-npm-on-linux)
 
+- [Youtube example gist](https://gist.github.com/soygul/42677432fa89df7fd783e0232a43a8cf)
+
+
+# Generic settings
+https://projectreach.biz
+https://projectreach.biz/policy
+https://projectreach.biz/termsofservice
+
+# Youtube
+Gog this this stupid page, find youtube, eneble the api, add the app,https://console.cloud.google.com/apis/library?project=project-reach-415400
+
+
+## Edit the allowed users - Oauth consent screen
+https://console.cloud.google.com/apis/credentials/consent?project=project-reach-415400
+
+## Develoers console
+https://console.cloud.google.com/welcome?project=project-reach-415400
+
