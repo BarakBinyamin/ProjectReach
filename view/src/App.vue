@@ -41,9 +41,9 @@
        >
        </textarea>
       </div>
-      <div id="button" class="button" onclick="UploadVideo">
+      <button id="button" class="button" onclick="UploadVideo">
         Post
-      </div>
+      </button>
       <div class="stats">
         <div id="post-upload-status"></div>
         <div id="upload-progress"></div>
