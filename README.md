@@ -22,3 +22,5 @@ APIS: TikTok, Youtube, Facebook/Instagram
 
 - https://stackoverflow.com/questions/56167681/drag-and-drop-in-vue-js-without-component
 
+- [install node on linux the right way](https://stackoverflow.com/questions/39981828/installing-nodejs-and-npm-on-linux)
+

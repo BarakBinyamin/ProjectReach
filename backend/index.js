@@ -5,8 +5,8 @@ const fs      = require('fs')
 const app     = express()
 
 var options = {
-  cert: fs.readFileSync('/etc/letsencrypt/live/projectreach.biz/fullchain.pem'),
-  key: fs.readFileSync('/etc/letsencrypt/live/projectreach.biz/privkey.pem'),
+  cert: fs.readFileSync('~/fullchain.pem'),
+  key: fs.readFileSync('~/privkey.pem'),
 }
 
 app.get("/example",(req,res)=>{
