@@ -88,7 +88,7 @@ export default{
     uploadVideo(){
       console.log('here')
       upload()
-    }
+    },
     login(social){
       switch (social){
         case "youtube":
