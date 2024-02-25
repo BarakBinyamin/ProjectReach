@@ -145,7 +145,7 @@ app.get("/*", (req, res)=>{
     res.send("this is a good test")
 })
 
-app.get("/*", (req,res)=>{
+redirect.get("/*", (req,res)=>{
     res.redirect("https://projectreach.biz")
 })
 
