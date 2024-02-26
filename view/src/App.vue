@@ -36,10 +36,9 @@
       </div>
       <div>
        <textarea id="comments"
-       class="classy" rows="5" cols="25" placeholder="Some comments"
+        class="classy" rows="5" cols="25" placeholder="Some comments"
         spellcheck="false"
-       >
-       </textarea>
+       ></textarea>
       </div>
       <div class="button" @click="upload()">
         Post
