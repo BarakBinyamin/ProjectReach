@@ -9,10 +9,27 @@ Check out the [slides](Brick-Hack-Presentation.pdf)
 Check out the project on [devpost](https://devpost.com/software/project-reach-uv3fjo)  
 Check out the website @ [https://ProjectReach.biz](https://ProjectReach.biz)
 
-## Inspiration
-Making and distributing educational videos can be made simpler with the the right tools!
 
-This project was hoping to enter into coolest domain name, best educational app, and prettiest UI
+## Inspiration
+Making and distributing educational videos can be made simpler with the the right tools!  
+
+This project was hoping to enter into coolest domain name, best educational app, and prettiest UI 
+
+Another goal was to match the look and feel of brick hack in an effort to earn more points with the judges
+
+<table width=100%>
+  <tr>
+    <th><img width=100% src="view/public/pre.png"/></th>
+    <th><img width=100% src="view/public/bhe.png"/></th>
+  </tr>
+  <tr>
+    <td width=50% align=center>
+    Brick Hack Homepage</td>
+    <td width=50% align=center>Project Reach Hompage</td>
+  </tr>
+  <tr>
+</table>
+
 
 ## What it does
 By making one interface to post videos to many platforms, we can save time, increase consistency, and avoid mistakes
