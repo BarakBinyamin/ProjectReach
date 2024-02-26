@@ -35,13 +35,19 @@ Another goal was to match the look and feel of brick hack in an effort to earn m
 By making one interface to post videos to many platforms, we can save time, increase consistency, and avoid mistakes
 
 ## How we built it
-For a website we need a domain (Kindly provided by our sponsors), a computer (to run the a server), and some software to build it: nodejs for hosting, vue for the frontend app. Finally we pulled in some api's like the googoleapi's to connect accounts from youtube 
+For a website we needed a domain (Kindly provided by our sponsors), a computer (to run the a server), and some software to build it: nodejs for hosting, vue for the frontend app. We used certbot to get some ssl certifactes. Finally we pulled in some api's like the googoleapi's to connect accounts from youtube 
+```bash
+# First gather developer access credentials, see MORE.md, then swap mine out in (they're access is turned off)
+# backend/appConfig2.json is the current file, consider changing the index of the redirect_url depending on production vs dev
+cd view    && npm run install && npm run build    # Build the app 
+cd ../backend && npm run install && node index.js # Serve the app
+```
 
 ## Challenges we ran into
-The major league platforms don't hand out free and unlimited access with ease. Many (like Tik Tok), block it behind some form of app review team. Youtube gives developer access with some restrictions, and the api docs are are over the place. Finding the most recent api was very difficult. We also ran out of our free developer api quota after posting 8 videos, and spamming google auth countless time
+The major league platforms don't hand out free and unlimited uppload access with ease. Many (like Tik Tok), block the feature behind some form of app review team. Youtube gives developer access with some restrictions, and the api docs are all over the place. Finding the most recent version of the youtube api was difficult. We also ran out of our free developer api quota after posting 8 videos, and spamming google auth countless times
 
 ## Accomplishments that we're proud of
-In the end we were able to make a pretty UI, and integrate youtube into our app (only private uploads before app review)
+In the end we were able to make a pretty UI, and integrate youtube uploads into our app (only private uploads before app review)
 
 ## What we learned
 OAuth, one way to implement server side sessions by hand, how the top platforms share their api's
