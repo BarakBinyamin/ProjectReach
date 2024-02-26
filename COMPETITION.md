@@ -10,3 +10,4 @@ Pricing is usually along the lines of N accounts & M posts, but sometimes posts 
 - [planoly](https://www.planoly.com/)
 - [buffer](https://buffer.com/)
 - [later](https://later.com/try/social-media-scheduler/?utm_source=google&utm_medium=cpc&gad_source=1)
+- [WUPHF.com](https://www.dailymotion.com/video/xde1y8)
