@@ -6,6 +6,7 @@ Pricing is usually along the lines of N accounts & M posts, but sometimes posts 
 ## Examples
 - [hootsuite](https://www.hootsuite.com/plans)
 - [skedsocial](https://skedsocial.com/pricing)
+- [ayrshare](https://www.ayrshare.com/pricing/)
 - [planable](https://planable.io/pricing/)
 - [planoly](https://www.planoly.com/)
 - [buffer](https://buffer.com/)
