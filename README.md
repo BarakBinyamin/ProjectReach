@@ -1,9 +1,11 @@
-[Brickhack](https://brickhack.io/) webapp to post a video to a bunch of platforms at the same time
+# Project Reach
+A [Brickhack](https://brickhack.io/) webapp to post a video to a bunch of platforms at the same time
 
-<img src="view/public/bannner.png">
+<a href="https://www.youtube.com/watch?v=U8V4j2Ws6_U" to="_blank">
+<img src="view/public/youtube.png">
+</a>
 
-<br>
-
+Check out the [slides](Brick-Hack-Presentation.pdf)  
 Check out the website @ [https://ProjectReach.biz](https://ProjectReach.biz)
 
 ## Inspiration
