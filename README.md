@@ -7,7 +7,7 @@ A [Brickhack](https://brickhack.io/) webapp to post a video to a bunch of platfo
 
 Check out the [slides](Brick-Hack-Presentation.pdf)  
 Check out the project on [devpost](https://devpost.com/software/project-reach-uv3fjo)  
-Check out the website @ [https://ProjectReach.biz](https://ProjectReach.biz)
+~~Check out the website @ [https://ProjectReach.biz](https://ProjectReach.biz)~~ The website has been retired
 
 
 ## Inspiration
